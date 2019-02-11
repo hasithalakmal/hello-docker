@@ -31,11 +31,11 @@ public class SmileGreetingController extends BaseController {
      * @return
      * @throws
      */
-    @GetMapping(value = "smile24/service/traditional/greetings", produces = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = "smile24/service/greetings", produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseStatus(HttpStatus.OK)
     public String traditionalGreeting() {
 
-        LOGGER.info("Received request for traditional greeting");
+        LOGGER.info("Received request for greeting");
         return sampleService.greetingWithoutName();
     }
 
