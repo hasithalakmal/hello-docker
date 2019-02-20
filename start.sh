@@ -5,6 +5,8 @@ mvn clean package -DskipTests
 
 sudo docker build -t hasithagamage/hello-docker:$dockerImageTag .
 
+sudo docker push hasithagamage/hello-docker:$dockerImageTag
+
 existingContainer=$(sudo docker ps | grep hasithagamage/hello-docker | awk '{print $1}')
 
 if [ -z "$existingContainer" ]
