@@ -1,5 +1,8 @@
 FROM ubuntu:18.04
-MAINTAINER hasithag;
+#MAINTAINER hasithag;
+LABEL "maintainer"="hasithag"
+LABEL "vender"="smile24es"
+LABEL "version"="1.0.0"
 
 # Install prerequisites
 RUN apt-get update && apt-get install --no-install-recommends -y \
